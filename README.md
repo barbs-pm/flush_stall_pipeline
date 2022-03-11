@@ -1,10 +1,10 @@
 # Pipeline Flushs and Stalls
 
 ## Objective 
-- Implement and compile the C language
+- Implement and compile in C
 - Generate the RISC-V assembly code
-- Run the code in the RIPES simulator
-- Count stops and downloads
+- Run the code in the RIPES simulator (with hazard detection, w/o hazard detection and 5-stage processor)
+- Count flushs and stalls
 
 ## How to contribute
 

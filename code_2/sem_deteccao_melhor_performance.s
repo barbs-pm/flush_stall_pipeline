@@ -1,4 +1,5 @@
-function:                               # @function
+function:
+      # li      a0, 0                               # @function
        addi    sp, sp, -2032
        sw      ra, 2028(sp)                    # 4-byte Folded Spill
        sw      s0, 2024(sp)                    # 4-byte Folded Spill
@@ -15,19 +16,24 @@ LBB0_3:                                #   in Loop: Header=BB0_1 Depth=1
        nop
        nop
        sw      a0, -20(s0)
-LBB0_1:                                # =>This Inner Loop Header: Depth=1
+    
+LBB0_1: 
+                                 # =>This Inner Loop Header: Depth=1
        lw      a1, -20(s0)
        li      a0, 999
        nop
        nop
        blt     a0, a1, LBB0_4
+
+       
 LBB0_2:                                #   in Loop: Header=BB0_1 Depth=1
        lw      a0, -20(s0)
        nop
        nop
+       lui     a1, 1048575 
        slli    a0, a0, 2
-       lui     a1, 1048575
-       nop
+       #lui     a1, 1048575 #alterado pra cima
+       #nop     #nao faz sentido aqui, so comentei
        nop
        addi    a1, a1, 76
        nop

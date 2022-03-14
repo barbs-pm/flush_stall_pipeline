@@ -77,7 +77,7 @@ LBB0_4:                                #   in Loop: Header=BB0_1 Depth=1
       nop
       add     a1, a1, a0
       li      a0, 1
-      nop
+      #nop
       nop
       sw      a0, 0(a1)            
       j       LBB0_6

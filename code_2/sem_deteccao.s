@@ -18,9 +18,10 @@ LBB0_2:                                #   in Loop: Header=BB0_1 Depth=1
        lw      a0, -20(s0)
        nop
        nop
-       slli    a0, a0, 2
        lui     a1, 1048575
-       nop
+       slli    a0, a0, 2
+       #lui     a1, 1048575 #instrução pra cima
+       #nop    #não faz sentido aqui
        nop
        addi    a1, a1, 76
        nop

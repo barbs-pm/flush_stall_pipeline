@@ -42,10 +42,11 @@ LBB0_2:                                #   in Loop: Header=BB0_1 Depth=1
 LBB0_3:                                #   in Loop: Header=BB0_1 Depth=1
       lw      a0, -20(s0)
       nop
-      nop
-      slli    a1, a0, 2
+     # nop
       lui     a0, 1048575
-      nop
+      slli    a1, a0, 2
+      #lui     a0, 1048575
+      #nop
       nop
       addi    a0, a0, 72
       nop
@@ -64,10 +65,11 @@ LBB0_3:                                #   in Loop: Header=BB0_1 Depth=1
 LBB0_4:                                #   in Loop: Header=BB0_1 Depth=1
       lw      a0, -20(s0)
       nop
-      nop
-      slli    a1, a0, 2
+     # nop
       lui     a0, 1048575
-      nop
+      slli    a1, a0, 2
+      #lui     a0, 1048575
+      #nop
       nop
       addi    a0, a0, 72
       nop
@@ -77,7 +79,7 @@ LBB0_4:                                #   in Loop: Header=BB0_1 Depth=1
       nop
       add     a1, a1, a0
       li      a0, 1
-      #nop
+      nop
       nop
       sw      a0, 0(a1)            
       j       LBB0_6
